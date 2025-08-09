@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  ssh-ai-honeypot:
+    build: .
+    image: ssh-ai-honeypot:latest
+    container_name: ssh-ai-honeypot
+    env_file: .env
+    ports:
+      - "${HONEY_PORT:-2222}:2222"
+    volumes:
+      - ./logs:/app/logs
+      - ./server_host_rsa.key:/app/server_host_rsa.key
+    restart: unless-stopped
