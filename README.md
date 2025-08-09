@@ -1,6 +1,6 @@
 # SSH AI Honeypot
 
-Minimal fake SSH with local emulation, optional AI, logging, arrow-history, access-after-attempts, per-IP rate limit, and temporary IP ban.
+Honeypot SSH with local emulation, optional AI-generated output, logging, arrow-history, access-after-attempts, per-IP rate limit, and temporary IP ban.
 
 ## Quick
 ```bash
